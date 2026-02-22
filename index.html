@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>808 Lyfe Inventory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="menu">
+<h1>808 LYFE LOADOUT</h1>
+<button onclick="enterStore()">OPEN INVENTORY</button>
+</div>
+
+<div class="inventory" id="inventory">
+
+<div class="grid">
+
+<div class="slot" onclick="showItem('Shadow Armor V1','Legendary','280 GSM')">
+<img src="https://i.imgur.com/YOURHOODIE.png">
+</div>
+
+<div class="slot" onclick="showItem('Stealth Mode Tee','Epic','240 GSM')">
+<img src="https://i.imgur.com/YOURTSHIRT.png">
+</div>
+
+</div>
+
+<div class="preview">
+<h2 id="name"></h2>
+<p id="rarity"></p>
+<p id="fabric"></p>
+<button onclick="equipItem()">EQUIP</button>
+</div>
+
+</div>
+
+<div id="popup">
+<h2>ITEM EQUIPPED</h2>
+<button onclick="closePop()">EXIT</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
